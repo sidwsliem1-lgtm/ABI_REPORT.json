@@ -1,0 +1,1789 @@
+{
+  "product": "HEXPYRION",
+  "watermark": "by dimareverse",
+  "target": "recorder1.dll",
+  "effective_target": "recorder1.dll",
+  "format": "pe",
+  "python_version": "3.11",
+  "blob": {
+    "va": 6460805556,
+    "size": 12051502
+  },
+  "onefile": null,
+  "source_recovery": {
+    "contract": "embedded-exact when original .py bytes are present; otherwise native semantic reconstruction",
+    "embedded_source_entries": {},
+    "exact_module_matches": {},
+    "partial_modules": 2,
+    "semantic_equivalence": "unverified",
+    "validation": "Static checks; no application execution"
+  },
+  "modules": [
+    {
+      "name": "__main__",
+      "func_ptr": 6446966608,
+      "source_origin": "native-semantic-reconstruction",
+      "mod_consts_base": 6460038416,
+      "global_base": 6459893152,
+      "consts_private": 739,
+      "consts_global": 107,
+      "generators": 0,
+      "genexpr_sites": 0,
+      "direct_helpers_scanned": 89,
+      "code_objects": [
+        {
+          "name": "<lambda>",
+          "qualname": "Y4MVideoRecorderApp._video_preview_loop.<locals>.<lambda>",
+          "argcount": 1,
+          "varnames": [
+            "f"
+          ],
+          "firstlineno": 415,
+          "flags": 3
+        },
+        {
+          "name": "<lambda>",
+          "qualname": "Y4MVideoRecorderApp.update_status.<locals>.<lambda>",
+          "argcount": 0,
+          "varnames": [
+            "self"
+          ],
+          "firstlineno": 285,
+          "flags": 3
+        },
+        {
+          "name": "<module>",
+          "qualname": "<module>",
+          "argcount": 0,
+          "varnames": [],
+          "firstlineno": 1,
+          "flags": 0
+        },
+        {
+          "name": "__init__",
+          "qualname": "Y4MVideoRecorderApp.__init__",
+          "argcount": 2,
+          "varnames": [
+            "self",
+            "root",
+            "btn"
+          ],
+          "firstlineno": 106,
+          "flags": 3
+        },
+        {
+          "name": "_apply_styles",
+          "qualname": "Y4MVideoRecorderApp._apply_styles",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "style"
+          ],
+          "firstlineno": 247,
+          "flags": 3
+        },
+        {
+          "name": "_center_window",
+          "qualname": "Y4MVideoRecorderApp._center_window",
+          "argcount": 4,
+          "varnames": [
+            "self",
+            "window",
+            "width",
+            "height",
+            "x",
+            "y"
+          ],
+          "firstlineno": 128,
+          "flags": 3
+        },
+        {
+          "name": "_get_ffmpeg_dshow_devices",
+          "qualname": "Y4MVideoRecorderApp._get_ffmpeg_dshow_devices",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "command",
+            "si",
+            "proc",
+            "_stdout",
+            "stderr",
+            "devices",
+            "line",
+            "e"
+          ],
+          "firstlineno": 296,
+          "flags": 3
+        },
+        {
+          "name": "_monitor_ffmpeg",
+          "qualname": "Y4MVideoRecorderApp._monitor_ffmpeg",
+          "argcount": 1,
+          "varnames": [
+            "self"
+          ],
+          "firstlineno": 521,
+          "flags": 3
+        },
+        {
+          "name": "_perform_ffmpeg_conversion",
+          "qualname": "Y4MVideoRecorderApp._perform_ffmpeg_conversion",
+          "argcount": 3,
+          "varnames": [
+            "self",
+            "source_path",
+            "output_path",
+            "cmd",
+            "si",
+            "cf",
+            "process",
+            "_",
+            "err",
+            "e"
+          ],
+          "firstlineno": 575,
+          "flags": 3
+        },
+        {
+          "name": "_perform_ffmpeg_download_and_setup",
+          "qualname": "Y4MVideoRecorderApp._perform_ffmpeg_download_and_setup",
+          "argcount": 5,
+          "varnames": [
+            "self",
+            "progress_window",
+            "status_var",
+            "details_var",
+            "p_bar",
+            "zip_download_path",
+            "response",
+            "total_size",
+            "downloaded_size",
+            "f",
+            "chunk",
+            "percent",
+            "temp_extract_dir",
+            "zip_ref",
+            "member",
+            "extracted_ffmpeg_exe_source_path",
+            "e"
+          ],
+          "firstlineno": 148,
+          "flags": 3
+        },
+        {
+          "name": "_start_preview",
+          "qualname": "Y4MVideoRecorderApp._start_preview",
+          "argcount": 3,
+          "varnames": [
+            "self",
+            "camera_index",
+            "camera_name",
+            "width",
+            "height",
+            "fps"
+          ],
+          "firstlineno": 350,
+          "flags": 3
+        },
+        {
+          "name": "_stop_preview",
+          "qualname": "Y4MVideoRecorderApp._stop_preview",
+          "argcount": 1,
+          "varnames": [
+            "self"
+          ],
+          "firstlineno": 340,
+          "flags": 3
+        },
+        {
+          "name": "_update_video_label",
+          "qualname": "Y4MVideoRecorderApp._update_video_label",
+          "argcount": 2,
+          "varnames": [
+            "self",
+            "imgtk"
+          ],
+          "firstlineno": 477,
+          "flags": 3
+        },
+        {
+          "name": "_video_preview_loop",
+          "qualname": "Y4MVideoRecorderApp._video_preview_loop",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "target_interval",
+            "loop_start_time",
+            "ret",
+            "frame",
+            "adjusted_frame",
+            "h_f",
+            "w_f",
+            "_",
+            "oz_positions",
+            "cx_n",
+            "cy_n",
+            "rx_n",
+            "ry_n",
+            "cx",
+            "cy",
+            "rx",
+            "ry",
+            "gray",
+            "scale",
+            "small_gray",
+            "faces",
+            "face_in_oval",
+            "fx",
+            "fy",
+            "fw",
+            "fh",
+            "face_cx",
+            "face_cy",
+            "dx",
+            "dy",
+            "mask",
+            "white_overlay",
+            "faded_frame",
+            "color",
+            "text",
+            "text_color",
+            "img",
+            "target_w",
+            "target_h",
+            "aspect_ratio",
+            "new_w",
+            "new_h",
+            "imgtk",
+            "sleep_duration",
+            "e"
+          ],
+          "firstlineno": 374,
+          "flags": 3
+        },
+        {
+          "name": "convert_external_video_to_y4m",
+          "qualname": "Y4MVideoRecorderApp.convert_external_video_to_y4m",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "source_paths",
+            "source_path",
+            "base",
+            "_",
+            "y4m_output_path"
+          ],
+          "firstlineno": 567,
+          "flags": 3
+        },
+        {
+          "name": "elevate",
+          "qualname": "elevate",
+          "argcount": 0,
+          "varnames": [
+            "script_path",
+            "python_exe",
+            "args",
+            "e"
+          ],
+          "firstlineno": 26,
+          "flags": 3
+        },
+        {
+          "name": "ensure_ffmpeg",
+          "qualname": "Y4MVideoRecorderApp.ensure_ffmpeg",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "progress_window",
+            "status_label_var",
+            "progress_bar",
+            "progress_details_var",
+            "success"
+          ],
+          "firstlineno": 134,
+          "flags": 3
+        },
+        {
+          "name": "is_admin",
+          "qualname": "is_admin",
+          "argcount": 0,
+          "varnames": [],
+          "firstlineno": 20,
+          "flags": 3
+        },
+        {
+          "name": "merge_videos",
+          "qualname": "Y4MVideoRecorderApp.merge_videos",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "indices",
+            "paths",
+            "merged_filename",
+            "output_path",
+            "list_file_path",
+            "f",
+            "path",
+            "cmd",
+            "si",
+            "cf",
+            "process",
+            "_",
+            "err",
+            "e"
+          ],
+          "firstlineno": 593,
+          "flags": 3
+        },
+        {
+          "name": "on_camera_select",
+          "qualname": "Y4MVideoRecorderApp.on_camera_select",
+          "argcount": 2,
+          "varnames": [
+            "self",
+            "event",
+            "selected_camera_str",
+            "camera_index"
+          ],
+          "firstlineno": 332,
+          "flags": 3
+        },
+        {
+          "name": "on_closing",
+          "qualname": "Y4MVideoRecorderApp.on_closing",
+          "argcount": 1,
+          "varnames": [
+            "self"
+          ],
+          "firstlineno": 617,
+          "flags": 3
+        },
+        {
+          "name": "open_recordings_folder",
+          "qualname": "Y4MVideoRecorderApp.open_recordings_folder",
+          "argcount": 1,
+          "varnames": [
+            "self"
+          ],
+          "firstlineno": 588,
+          "flags": 3
+        },
+        {
+          "name": "refresh_recorded_videos_list",
+          "qualname": "Y4MVideoRecorderApp.refresh_recorded_videos_list",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "y4m_files",
+            "f_path"
+          ],
+          "firstlineno": 288,
+          "flags": 3
+        },
+        {
+          "name": "setup_gui",
+          "qualname": "Y4MVideoRecorderApp.setup_gui",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "top_controls_frame",
+            "main_content_frame",
+            "right_sidebar_frame",
+            "recorded_videos_lf",
+            "list_scrollbar_y",
+            "refresh_list_btn",
+            "file_ops_lf",
+            "bottom_preview_controls_frame"
+          ],
+          "firstlineno": 181,
+          "flags": 3
+        },
+        {
+          "name": "show_admin_required_message_interactive",
+          "qualname": "show_admin_required_message_interactive",
+          "argcount": 0,
+          "varnames": [
+            "root_temp",
+            "result"
+          ],
+          "firstlineno": 627,
+          "flags": 3
+        },
+        {
+          "name": "start_recording",
+          "qualname": "Y4MVideoRecorderApp.start_recording",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "device_name",
+            "duration_seconds",
+            "ts",
+            "y4m_filename",
+            "ffmpeg_cmd",
+            "width",
+            "height",
+            "si",
+            "cf",
+            "e"
+          ],
+          "firstlineno": 480,
+          "flags": 3
+        },
+        {
+          "name": "stop_recording",
+          "qualname": "Y4MVideoRecorderApp.stop_recording",
+          "argcount": 2,
+          "varnames": [
+            "self",
+            "is_error",
+            "was_actively_recording",
+            "current_y4m_file_path"
+          ],
+          "firstlineno": 527,
+          "flags": 3
+        },
+        {
+          "name": "update_camera_list",
+          "qualname": "Y4MVideoRecorderApp.update_camera_list",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "available_cameras"
+          ],
+          "firstlineno": 316,
+          "flags": 3
+        },
+        {
+          "name": "update_status",
+          "qualname": "Y4MVideoRecorderApp.update_status",
+          "argcount": 3,
+          "varnames": [
+            "self",
+            "message",
+            "level",
+            "bg_color",
+            "fg_color"
+          ],
+          "firstlineno": 273,
+          "flags": 3
+        }
+      ],
+      "source_lines": 1089,
+      "output_path": "recorder1.py",
+      "quality": {
+        "parses": true,
+        "compiles": true,
+        "semantic_equivalence": "unverified",
+        "status": "partial",
+        "issues": [
+          {
+            "kind": "possible_stub",
+            "name": "Y4MVideoRecorderApp.convert_external_video_to_y4m",
+            "line": 1010
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "CALL_VECTOR_WITH_KEYWORDS"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "RECORDINGS_FOLDER_NAME"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "STYLE_FONT_BOLD"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "STYLE_FONT_DEFAULT"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "STYLE_FONT_SMALL"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "TARGET_RECORDING_FPS"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_ACCENT"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_ACCENT_HOVER"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_BG"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_ENTRY"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_FG"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_FG_DIM"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_PANEL"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v115"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v116"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v117"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v118"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v119"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v120"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v121"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v18"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v22"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v41"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v42"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v52"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v71"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v9"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v96"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "np"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "root"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "si"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "style"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_180003b80"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_180003f80"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_1800040a0"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_18100ec30"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181010fa0"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_18101ad50"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181020db0"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181022c00"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181022e70"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181023a50"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181029cc0"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181029d30"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181029da0"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181029e10"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_1810336f0"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "tk"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "via_PyErr_Format"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "via_PyUnicode_Join"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "width"
+          },
+          {
+            "kind": "empty_branch",
+            "line": 347
+          },
+          {
+            "kind": "empty_branch",
+            "line": 355
+          },
+          {
+            "kind": "empty_branch",
+            "line": 980
+          },
+          {
+            "kind": "empty_branch",
+            "line": 984
+          },
+          {
+            "kind": "empty_branch",
+            "line": 988
+          },
+          {
+            "kind": "empty_branch",
+            "line": 1038
+          },
+          {
+            "kind": "empty_branch",
+            "line": 1064
+          },
+          {
+            "kind": "empty_branch",
+            "line": 46
+          },
+          {
+            "kind": "empty_branch",
+            "line": 333
+          },
+          {
+            "kind": "empty_branch",
+            "line": 371
+          },
+          {
+            "kind": "empty_branch",
+            "line": 1001
+          },
+          {
+            "kind": "empty_branch",
+            "line": 380
+          },
+          {
+            "kind": "empty_branch",
+            "line": 388
+          },
+          {
+            "kind": "empty_branch",
+            "line": 879
+          },
+          {
+            "kind": "empty_branch",
+            "line": 391
+          },
+          {
+            "kind": "empty_branch",
+            "line": 690
+          },
+          {
+            "kind": "empty_branch",
+            "line": 723
+          },
+          {
+            "kind": "empty_branch",
+            "line": 738
+          },
+          {
+            "kind": "empty_branch",
+            "line": 886
+          },
+          {
+            "kind": "empty_branch",
+            "line": 383
+          },
+          {
+            "kind": "empty_branch",
+            "line": 394
+          },
+          {
+            "kind": "empty_branch",
+            "line": 560
+          },
+          {
+            "kind": "empty_branch",
+            "line": 575
+          },
+          {
+            "kind": "empty_branch",
+            "line": 697
+          },
+          {
+            "kind": "empty_branch",
+            "line": 764
+          },
+          {
+            "kind": "empty_branch",
+            "line": 397
+          },
+          {
+            "kind": "empty_branch",
+            "line": 601
+          },
+          {
+            "kind": "empty_branch",
+            "line": 726
+          },
+          {
+            "kind": "empty_branch",
+            "line": 741
+          },
+          {
+            "kind": "empty_branch",
+            "line": 889
+          },
+          {
+            "kind": "empty_branch",
+            "line": 412
+          },
+          {
+            "kind": "empty_branch",
+            "line": 563
+          },
+          {
+            "kind": "empty_branch",
+            "line": 578
+          },
+          {
+            "kind": "empty_branch",
+            "line": 700
+          },
+          {
+            "kind": "empty_branch",
+            "line": 767
+          },
+          {
+            "kind": "empty_branch",
+            "line": 400
+          },
+          {
+            "kind": "empty_branch",
+            "line": 604
+          },
+          {
+            "kind": "empty_branch",
+            "line": 415
+          },
+          {
+            "kind": "empty_branch",
+            "line": 438
+          },
+          {
+            "kind": "empty_branch",
+            "line": 441
+          },
+          {
+            "kind": "empty_branch",
+            "line": 528
+          },
+          {
+            "kind": "empty_branch",
+            "line": 536
+          },
+          {
+            "kind": "empty_branch",
+            "line": 539
+          },
+          {
+            "kind": "missing_exception_handler",
+            "name": "Y4MVideoRecorderApp._get_ffmpeg_dshow_devices",
+            "line": 306,
+            "native_matchers": 3
+          },
+          {
+            "kind": "missing_exception_handler",
+            "name": "Y4MVideoRecorderApp._perform_ffmpeg_conversion",
+            "line": 1013,
+            "native_matchers": 1
+          },
+          {
+            "kind": "missing_exception_handler",
+            "name": "Y4MVideoRecorderApp.merge_videos",
+            "line": 1027,
+            "native_matchers": 2
+          }
+        ],
+        "functions_expected": 26,
+        "functions_emitted": 27,
+        "missing_functions": [],
+        "module_entry": {
+          "entry_guard": "inferred",
+          "policy": "auto"
+        },
+        "assumptions": [
+          {
+            "kind": "inferred_main_guard",
+            "detail": "The original entry boundary may have been optimized away. Use --main-guard never for flat module execution."
+          }
+        ]
+      }
+    },
+    {
+      "name": "__parents_main__",
+      "func_ptr": 6447182912,
+      "source_origin": "native-semantic-reconstruction",
+      "mod_consts_base": 6460045216,
+      "global_base": 6459893152,
+      "consts_private": 735,
+      "consts_global": 107,
+      "generators": 0,
+      "genexpr_sites": 0,
+      "direct_helpers_scanned": 73,
+      "code_objects": [
+        {
+          "name": "<lambda>",
+          "qualname": "Y4MVideoRecorderApp._video_preview_loop.<locals>.<lambda>",
+          "argcount": 1,
+          "varnames": [
+            "f"
+          ],
+          "firstlineno": 415,
+          "flags": 3
+        },
+        {
+          "name": "<lambda>",
+          "qualname": "Y4MVideoRecorderApp.update_status.<locals>.<lambda>",
+          "argcount": 0,
+          "varnames": [
+            "self"
+          ],
+          "firstlineno": 285,
+          "flags": 3
+        },
+        {
+          "name": "<lambda>",
+          "qualname": "__nuitka_freeze_support.<locals>.<lambda>",
+          "argcount": 1,
+          "varnames": [
+            "mod_name"
+          ],
+          "firstlineno": 646,
+          "flags": 3
+        },
+        {
+          "name": "<module __parents_main__>",
+          "qualname": "<module __parents_main__>",
+          "argcount": 0,
+          "varnames": [],
+          "firstlineno": 1,
+          "flags": 0
+        },
+        {
+          "name": "__init__",
+          "qualname": "Y4MVideoRecorderApp.__init__",
+          "argcount": 2,
+          "varnames": [
+            "self",
+            "root",
+            "btn"
+          ],
+          "firstlineno": 106,
+          "flags": 3
+        },
+        {
+          "name": "__nuitka_freeze_support",
+          "qualname": "__nuitka_freeze_support",
+          "argcount": 0,
+          "varnames": [
+            "sys",
+            "multiprocessing",
+            "kwds",
+            "args",
+            "arg",
+            "name",
+            "value"
+          ],
+          "firstlineno": 641,
+          "flags": 3
+        },
+        {
+          "name": "_apply_styles",
+          "qualname": "Y4MVideoRecorderApp._apply_styles",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "style"
+          ],
+          "firstlineno": 247,
+          "flags": 3
+        },
+        {
+          "name": "_center_window",
+          "qualname": "Y4MVideoRecorderApp._center_window",
+          "argcount": 4,
+          "varnames": [
+            "self",
+            "window",
+            "width",
+            "height",
+            "x",
+            "y"
+          ],
+          "firstlineno": 128,
+          "flags": 3
+        },
+        {
+          "name": "_get_ffmpeg_dshow_devices",
+          "qualname": "Y4MVideoRecorderApp._get_ffmpeg_dshow_devices",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "command",
+            "si",
+            "proc",
+            "_stdout",
+            "stderr",
+            "devices",
+            "line",
+            "e"
+          ],
+          "firstlineno": 296,
+          "flags": 3
+        },
+        {
+          "name": "_monitor_ffmpeg",
+          "qualname": "Y4MVideoRecorderApp._monitor_ffmpeg",
+          "argcount": 1,
+          "varnames": [
+            "self"
+          ],
+          "firstlineno": 521,
+          "flags": 3
+        },
+        {
+          "name": "_perform_ffmpeg_conversion",
+          "qualname": "Y4MVideoRecorderApp._perform_ffmpeg_conversion",
+          "argcount": 3,
+          "varnames": [
+            "self",
+            "source_path",
+            "output_path",
+            "cmd",
+            "si",
+            "cf",
+            "process",
+            "_",
+            "err",
+            "e"
+          ],
+          "firstlineno": 575,
+          "flags": 3
+        },
+        {
+          "name": "_perform_ffmpeg_download_and_setup",
+          "qualname": "Y4MVideoRecorderApp._perform_ffmpeg_download_and_setup",
+          "argcount": 5,
+          "varnames": [
+            "self",
+            "progress_window",
+            "status_var",
+            "details_var",
+            "p_bar",
+            "zip_download_path",
+            "response",
+            "total_size",
+            "downloaded_size",
+            "f",
+            "chunk",
+            "percent",
+            "temp_extract_dir",
+            "zip_ref",
+            "member",
+            "extracted_ffmpeg_exe_source_path",
+            "e"
+          ],
+          "firstlineno": 148,
+          "flags": 3
+        },
+        {
+          "name": "_start_preview",
+          "qualname": "Y4MVideoRecorderApp._start_preview",
+          "argcount": 3,
+          "varnames": [
+            "self",
+            "camera_index",
+            "camera_name",
+            "width",
+            "height",
+            "fps"
+          ],
+          "firstlineno": 350,
+          "flags": 3
+        },
+        {
+          "name": "_stop_preview",
+          "qualname": "Y4MVideoRecorderApp._stop_preview",
+          "argcount": 1,
+          "varnames": [
+            "self"
+          ],
+          "firstlineno": 340,
+          "flags": 3
+        },
+        {
+          "name": "_update_video_label",
+          "qualname": "Y4MVideoRecorderApp._update_video_label",
+          "argcount": 2,
+          "varnames": [
+            "self",
+            "imgtk"
+          ],
+          "firstlineno": 477,
+          "flags": 3
+        },
+        {
+          "name": "_video_preview_loop",
+          "qualname": "Y4MVideoRecorderApp._video_preview_loop",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "target_interval",
+            "loop_start_time",
+            "ret",
+            "frame",
+            "adjusted_frame",
+            "h_f",
+            "w_f",
+            "_",
+            "oz_positions",
+            "cx_n",
+            "cy_n",
+            "rx_n",
+            "ry_n",
+            "cx",
+            "cy",
+            "rx",
+            "ry",
+            "gray",
+            "scale",
+            "small_gray",
+            "faces",
+            "face_in_oval",
+            "fx",
+            "fy",
+            "fw",
+            "fh",
+            "face_cx",
+            "face_cy",
+            "dx",
+            "dy",
+            "mask",
+            "white_overlay",
+            "faded_frame",
+            "color",
+            "text",
+            "text_color",
+            "img",
+            "target_w",
+            "target_h",
+            "aspect_ratio",
+            "new_w",
+            "new_h",
+            "imgtk",
+            "sleep_duration",
+            "e"
+          ],
+          "firstlineno": 374,
+          "flags": 3
+        },
+        {
+          "name": "convert_external_video_to_y4m",
+          "qualname": "Y4MVideoRecorderApp.convert_external_video_to_y4m",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "source_paths",
+            "source_path",
+            "base",
+            "_",
+            "y4m_output_path"
+          ],
+          "firstlineno": 567,
+          "flags": 3
+        },
+        {
+          "name": "elevate",
+          "qualname": "elevate",
+          "argcount": 0,
+          "varnames": [
+            "script_path",
+            "python_exe",
+            "args",
+            "e"
+          ],
+          "firstlineno": 26,
+          "flags": 3
+        },
+        {
+          "name": "ensure_ffmpeg",
+          "qualname": "Y4MVideoRecorderApp.ensure_ffmpeg",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "progress_window",
+            "status_label_var",
+            "progress_bar",
+            "progress_details_var",
+            "success"
+          ],
+          "firstlineno": 134,
+          "flags": 3
+        },
+        {
+          "name": "is_admin",
+          "qualname": "is_admin",
+          "argcount": 0,
+          "varnames": [],
+          "firstlineno": 20,
+          "flags": 3
+        },
+        {
+          "name": "merge_videos",
+          "qualname": "Y4MVideoRecorderApp.merge_videos",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "indices",
+            "paths",
+            "merged_filename",
+            "output_path",
+            "list_file_path",
+            "f",
+            "path",
+            "cmd",
+            "si",
+            "cf",
+            "process",
+            "_",
+            "err",
+            "e"
+          ],
+          "firstlineno": 593,
+          "flags": 3
+        },
+        {
+          "name": "on_camera_select",
+          "qualname": "Y4MVideoRecorderApp.on_camera_select",
+          "argcount": 2,
+          "varnames": [
+            "self",
+            "event",
+            "selected_camera_str",
+            "camera_index"
+          ],
+          "firstlineno": 332,
+          "flags": 3
+        },
+        {
+          "name": "on_closing",
+          "qualname": "Y4MVideoRecorderApp.on_closing",
+          "argcount": 1,
+          "varnames": [
+            "self"
+          ],
+          "firstlineno": 617,
+          "flags": 3
+        },
+        {
+          "name": "open_recordings_folder",
+          "qualname": "Y4MVideoRecorderApp.open_recordings_folder",
+          "argcount": 1,
+          "varnames": [
+            "self"
+          ],
+          "firstlineno": 588,
+          "flags": 3
+        },
+        {
+          "name": "refresh_recorded_videos_list",
+          "qualname": "Y4MVideoRecorderApp.refresh_recorded_videos_list",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "y4m_files",
+            "f_path"
+          ],
+          "firstlineno": 288,
+          "flags": 3
+        },
+        {
+          "name": "setup_gui",
+          "qualname": "Y4MVideoRecorderApp.setup_gui",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "top_controls_frame",
+            "main_content_frame",
+            "right_sidebar_frame",
+            "recorded_videos_lf",
+            "list_scrollbar_y",
+            "refresh_list_btn",
+            "file_ops_lf",
+            "bottom_preview_controls_frame"
+          ],
+          "firstlineno": 181,
+          "flags": 3
+        },
+        {
+          "name": "show_admin_required_message_interactive",
+          "qualname": "show_admin_required_message_interactive",
+          "argcount": 0,
+          "varnames": [
+            "root_temp",
+            "result"
+          ],
+          "firstlineno": 627,
+          "flags": 3
+        },
+        {
+          "name": "start_recording",
+          "qualname": "Y4MVideoRecorderApp.start_recording",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "device_name",
+            "duration_seconds",
+            "ts",
+            "y4m_filename",
+            "ffmpeg_cmd",
+            "width",
+            "height",
+            "si",
+            "cf",
+            "e"
+          ],
+          "firstlineno": 480,
+          "flags": 3
+        },
+        {
+          "name": "stop_recording",
+          "qualname": "Y4MVideoRecorderApp.stop_recording",
+          "argcount": 2,
+          "varnames": [
+            "self",
+            "is_error",
+            "was_actively_recording",
+            "current_y4m_file_path"
+          ],
+          "firstlineno": 527,
+          "flags": 3
+        },
+        {
+          "name": "update_camera_list",
+          "qualname": "Y4MVideoRecorderApp.update_camera_list",
+          "argcount": 1,
+          "varnames": [
+            "self",
+            "available_cameras"
+          ],
+          "firstlineno": 316,
+          "flags": 3
+        },
+        {
+          "name": "update_status",
+          "qualname": "Y4MVideoRecorderApp.update_status",
+          "argcount": 3,
+          "varnames": [
+            "self",
+            "message",
+            "level",
+            "bg_color",
+            "fg_color"
+          ],
+          "firstlineno": 273,
+          "flags": 3
+        }
+      ],
+      "source_lines": 1077,
+      "output_path": "_nuitka_runtime/__parents_main__.py",
+      "quality": {
+        "parses": true,
+        "compiles": true,
+        "semantic_equivalence": "unverified",
+        "status": "partial",
+        "issues": [
+          {
+            "kind": "possible_stub",
+            "name": "Y4MVideoRecorderApp.convert_external_video_to_y4m",
+            "line": 1011
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "CALL_VECTOR_WITH_KEYWORDS"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "RECORDINGS_FOLDER_NAME"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "STYLE_FONT_BOLD"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "STYLE_FONT_DEFAULT"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "STYLE_FONT_SMALL"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "TARGET_RECORDING_FPS"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_ACCENT"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_ACCENT_HOVER"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_BG"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_ENTRY"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_FG"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_FG_DIM"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "THEME_PANEL"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v115"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v116"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v117"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v118"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v119"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v120"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v121"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v18"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v22"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v41"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v42"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v52"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v71"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v9"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "_v96"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "np"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "si"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_180003b80"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_180003f80"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_1800040a0"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_18100ec30"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181010fa0"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_18101ad50"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181020db0"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181022c00"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181022e70"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181023a50"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181029cc0"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181029d30"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181029da0"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_181029e10"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "sub_1810336f0"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "tk"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "via_PyErr_Format"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "via_PyUnicode_Join"
+          },
+          {
+            "kind": "unresolved_global",
+            "name": "width"
+          },
+          {
+            "kind": "empty_branch",
+            "line": 348
+          },
+          {
+            "kind": "empty_branch",
+            "line": 356
+          },
+          {
+            "kind": "empty_branch",
+            "line": 981
+          },
+          {
+            "kind": "empty_branch",
+            "line": 985
+          },
+          {
+            "kind": "empty_branch",
+            "line": 989
+          },
+          {
+            "kind": "empty_branch",
+            "line": 1039
+          },
+          {
+            "kind": "empty_branch",
+            "line": 47
+          },
+          {
+            "kind": "empty_branch",
+            "line": 334
+          },
+          {
+            "kind": "empty_branch",
+            "line": 372
+          },
+          {
+            "kind": "empty_branch",
+            "line": 1002
+          },
+          {
+            "kind": "empty_branch",
+            "line": 381
+          },
+          {
+            "kind": "empty_branch",
+            "line": 389
+          },
+          {
+            "kind": "empty_branch",
+            "line": 880
+          },
+          {
+            "kind": "empty_branch",
+            "line": 392
+          },
+          {
+            "kind": "empty_branch",
+            "line": 691
+          },
+          {
+            "kind": "empty_branch",
+            "line": 724
+          },
+          {
+            "kind": "empty_branch",
+            "line": 739
+          },
+          {
+            "kind": "empty_branch",
+            "line": 887
+          },
+          {
+            "kind": "empty_branch",
+            "line": 384
+          },
+          {
+            "kind": "empty_branch",
+            "line": 395
+          },
+          {
+            "kind": "empty_branch",
+            "line": 561
+          },
+          {
+            "kind": "empty_branch",
+            "line": 576
+          },
+          {
+            "kind": "empty_branch",
+            "line": 698
+          },
+          {
+            "kind": "empty_branch",
+            "line": 765
+          },
+          {
+            "kind": "empty_branch",
+            "line": 398
+          },
+          {
+            "kind": "empty_branch",
+            "line": 602
+          },
+          {
+            "kind": "empty_branch",
+            "line": 727
+          },
+          {
+            "kind": "empty_branch",
+            "line": 742
+          },
+          {
+            "kind": "empty_branch",
+            "line": 890
+          },
+          {
+            "kind": "empty_branch",
+            "line": 413
+          },
+          {
+            "kind": "empty_branch",
+            "line": 564
+          },
+          {
+            "kind": "empty_branch",
+            "line": 579
+          },
+          {
+            "kind": "empty_branch",
+            "line": 701
+          },
+          {
+            "kind": "empty_branch",
+            "line": 768
+          },
+          {
+            "kind": "empty_branch",
+            "line": 401
+          },
+          {
+            "kind": "empty_branch",
+            "line": 605
+          },
+          {
+            "kind": "empty_branch",
+            "line": 416
+          },
+          {
+            "kind": "empty_branch",
+            "line": 439
+          },
+          {
+            "kind": "empty_branch",
+            "line": 442
+          },
+          {
+            "kind": "empty_branch",
+            "line": 529
+          },
+          {
+            "kind": "empty_branch",
+            "line": 537
+          },
+          {
+            "kind": "empty_branch",
+            "line": 540
+          },
+          {
+            "kind": "missing_exception_handler",
+            "name": "Y4MVideoRecorderApp._get_ffmpeg_dshow_devices",
+            "line": 307,
+            "native_matchers": 3
+          },
+          {
+            "kind": "missing_exception_handler",
+            "name": "Y4MVideoRecorderApp._perform_ffmpeg_conversion",
+            "line": 1014,
+            "native_matchers": 1
+          },
+          {
+            "kind": "missing_exception_handler",
+            "name": "Y4MVideoRecorderApp.merge_videos",
+            "line": 1028,
+            "native_matchers": 2
+          }
+        ],
+        "functions_expected": 27,
+        "functions_emitted": 28,
+        "missing_functions": [],
+        "module_entry": {
+          "entry_guard": "absent_or_optimized_away",
+          "policy": "auto"
+        }
+      }
+    }
+  ],
+  "failed_modules": 0,
+  "elapsed_sec": 2356.22,
+  "abi": {
+    "report": "ABI_REPORT.json",
+    "runtime_status": "identified",
+    "python_version": [
+      3,
+      11
+    ],
+    "unresolved_values": 0,
+    "semantic_equivalence": "unverified"
+  }
+}
