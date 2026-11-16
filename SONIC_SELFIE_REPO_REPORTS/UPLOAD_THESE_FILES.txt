@@ -1,0 +1,5 @@
+﻿Upload every SONIC_SELFIE_REVIEW_PART_*.txt file in this folder to the root of your public GitHub repository:
+https://github.com/sidwsliem1-lgtm/ABI_REPORT.json
+
+Do not upload this instruction file unless you want to.
+After upload, tell ChatGPT that the review parts are available in the repository.
